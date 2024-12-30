@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Program</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.6.8/firebase-app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.6.8/firebase-firestore.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <header class="p-6 bg-white shadow-lg">
+        <h1 class="text-4xl text-center">Welcome to Our Café</h1>
+    </header>
+    <main class="p-6">
+        <div id="menu" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+        <div class="mt-8">
+            <button id="order-button" class="btn btn-primary">Place Your Order</button>
+        </div>
+    </main>
+    <footer class="p-6 bg-white text-center">
+        <p>&copy; 2023 Café Program</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
